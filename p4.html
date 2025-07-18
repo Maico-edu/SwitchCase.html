@@ -6,10 +6,20 @@
     */
 
     // ENTRADA
-
+    const caractere = prompt("Informe uma caractere, por favor").toUpperCase();
     
     // PROCESSAMENTO
-
+    switch (caractere) {
+        case "A":
+        case "E":
+        case "I":
+        case "0":
+        case "U":
+            alert("é uma vogal!");
+            break;
+        default:
+            alert("não é uma vogal");         
+    }
     
     // SAÍDA
 

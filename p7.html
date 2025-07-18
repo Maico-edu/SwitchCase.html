@@ -7,10 +7,68 @@
     */
 
     //ENTRADA
-
+    const hemisferio = prompt("Informe qual hemisfério voce esta. (S sul, N norte )").toUpperCase().trim();
+    const mes = Number(prompt("Informe qual mes vc esta? (1 ao 12)"));
     
     //PROCESSAMENTO
+    switch (hemisferio) {
+        case "S": 
+        switch (mes) {
+        case 12:
+        case 1:
+        case 2:
+        case 3:
+            alert("a estaçao do ano que voce esta é o verão");
+            break;
+        case 4:
+        case 5:
+        case 6:
+             alert("a estaçao do ano que voce esta é o outono");
+             break;
+        case 7:
+        case 8:
+        case 9:
+             alert("a estaçao do ano que voce esta é o inverno");
+            break;
+        case 10:
+        case 11:
+            alert("a estaçao do ano que voce esta é o Primavera");
+            break;
+        default:
+            alert("Invalido!");
+            break;
 
+        }
+    }
+
+        switch (hemisferio) {
+            case "N": 
+            switch (mes) {
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            alert("a estaçao do ano que voce esta é o verão");
+            break;
+        case 10:
+        case 11:
+        case 12:
+             alert("a estaçao do ano que voce esta é o outono");
+             break;
+        case 1:
+        case 2:
+        case 3:
+             alert("a estaçao do ano que voce esta é o inverno");
+            break;
+        case 4:
+        case 5:
+            alert("a estaçao do ano que voce esta é o Primavera");
+            break;
+        default:
+            alert("Invalido!");
+            break;
+            }
+    }
 
     //SAÍDA
 

@@ -12,10 +12,37 @@
     */
 
     //ENTRADA
-
+    const p1 = prompt("Telefonou para a vítima? (S-sim N-não)").toUpperCase();
+    const p2 = prompt("Esteve no local do crime?(S-sim N-não)").toUpperCase();
+    const p3 = prompt("Mora perto da vítima? (S-sim N-não)").toUpperCase();
+    const p4 = prompt("Devia para a vítima? (S-sim N-não)").toUpperCase(); 
+    const p5 = prompt("Já trabalhou com a vítima? (S-sim N-não)").toUpperCase();
     
     //PROCESSAMENTO
 
+    let pontos = 0;
+    if (p1 == "S") pontos++;
+    if (p2 == "S") pontos++;
+    if (p3 == "S") pontos++;
+    if (p4 == "S") pontos++;
+    if (p5 == "S") pontos++;
+
+    switch (pontos) {
+        case 0:
+        case 1:
+            alert(`Inocente`);
+            break;
+        case 2:
+            alert("suspeita");
+            break;
+        case 3:
+        case 4:
+            alert("Cúmplice");
+            break;
+        case 5:
+            alert("assasino");
+            break;
+    }
 
     //SAÍDA
 
